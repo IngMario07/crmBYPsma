@@ -1,0 +1,30 @@
+/* navbar.component.css */
+
+/* Estilo para la barra de navegación */
+.navbar {
+    padding-top: 1rem; /* Añade espacio arriba de la barra de navegación */
+  }
+  
+  /* Estilo para el enlace de la marca */
+  .navbar-brand {
+    font-size: 1.5rem; /* Tamaño de fuente más grande para la marca */
+    font-weight: bold; /* Texto en negrita para destacar */
+  }
+  
+  /* Estilo para los ítems del menú */
+  .nav-item {
+    margin-left: 1rem; /* Separación entre los ítems del menú */
+  }
+  
+  /* Estilo para los enlaces del menú */
+  .nav-link {
+    font-size: 1.2rem; /* Tamaño de fuente para los enlaces */
+    transition: color 0.3s ease; /* Transición suave para el cambio de color */
+  }
+  
+  /* Estilo para los enlaces activos */
+  .nav-link.active {
+    font-weight: bold; /* Texto en negrita para el enlace activo */
+    color: #ffc107; /* Color amarillo para el enlace activo */
+  }
+  
