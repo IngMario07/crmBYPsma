@@ -1,0 +1,71 @@
+/* lista-personal.component.css */
+
+.container {
+    width: 100%;
+    margin: 20px auto;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    text-align: center; /* Alineación del contenido de la tabla al centro */
+}
+
+.table th,
+.table td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Aumentamos el padding para mejorar la separación */
+}
+
+.table th {
+    background-color: #f2f2f2;
+}
+
+.btn-container {
+    text-align: right; /* Alineación de los botones a la derecha */
+    margin-bottom: 10px; /* Espacio inferior */
+}
+
+.btn {
+    display: inline-block; /* Mostrar los botones en línea */
+    margin-right: 10px; /* Espacio entre botones */
+    font-size: 14px; /* Tamaño de fuente de los botones */
+}
+
+.btn-primary {
+    background-color: #007bff; /* Color de fondo botón primario */
+    color: #fff; /* Color de texto botón primario */
+    border-color: #007bff; /* Color de borde botón primario */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Color de fondo botón primario al hacer hover */
+    border-color: #0056b3; /* Color de borde botón primario al hacer hover */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Color de fondo botón peligro */
+    color: #fff; /* Color de texto botón peligro */
+    border-color: #dc3545; /* Color de borde botón peligro */
+}
+
+.btn-danger:hover {
+    background-color: #bd2130; /* Color de fondo botón peligro al hacer hover */
+    border-color: #bd2130; /* Color de borde botón peligro al hacer hover */
+}
+
+.btn-success {
+    background-color: #28a745; /* Color de fondo botón éxito */
+    color: #fff; /* Color de texto botón éxito */
+    border-color: #28a745; /* Color de borde botón éxito */
+}
+
+.btn-success:hover {
+    background-color: #218838; /* Color de fondo botón éxito al hacer hover */
+    border-color: #218838; /* Color de borde botón éxito al hacer hover */
+}
+
+.text-center {
+    text-align: center; /* Centrar el contenido dentro de las celdas de la tabla */
+}
