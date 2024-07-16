@@ -1,3 +1,41 @@
 <app-navbar></app-navbar>
 
-<p>sanciones works!</p>
+<div class="container">
+    <div class="btn-container">
+        <button class="btn btn-success" (click)="agregarSancion()">
+            <i class="bi bi-plus"></i> Agregar Nueva Sanción
+        </button>
+    </div>
+
+    <h2>Listado de Sanciones</h2>
+
+    <table class="table table-striped">
+        <thead class="thead-light">
+            <tr>
+                <th class="text-center">ID</th>
+                <th class="text-center">ID Personal</th>
+                <th class="text-center">ID Jefe Encargado</th>
+                <th class="text-center">Fecha</th>
+                <th class="text-center">Motivo</th>
+                <th class="text-center">Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let sancion of sanciones">
+                <td class="text-center">{{ sancion.id }}</td>
+                <td class="text-center">{{ sancion.id_personal }}</td>
+                <td class="text-center">{{ sancion.id_jefe_encargado }}</td>
+                <td class="text-center">{{ sancion.fecha }}</td>
+                <td class="text-center">{{ sancion.motivo }}</td>
+                <td class="text-center">
+                    <button (click)="editarSancion(sancion)" class="btn btn-primary">
+                        <i class="bi bi-pencil"></i> Editar
+                    </button>
+                    <button (click)="eliminarSancion(sancion)" class="btn btn-danger">
+                        <i class="bi bi-trash"></i> Eliminar
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
