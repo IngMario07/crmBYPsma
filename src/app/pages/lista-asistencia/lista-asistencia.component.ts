@@ -3,20 +3,25 @@ import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-lista-asistencia',
   templateUrl: './lista-asistencia.component.html',
-  styleUrl: './lista-asistencia.component.css'
+  styleUrls: ['./lista-asistencia.component.css']
 })
 export class ListaAsistenciaComponent implements OnInit {
 
   asistencias = [
-    { id: 1, id_personal: 1, fecha: '2024-07-16', presente: true, chequeo_material: true, id_jefe_encargado: 1 },
-    { id: 2, id_personal: 2, fecha: '2024-07-17', presente: false, chequeo_material: false, id_jefe_encargado: 2 },
-    { id: 3, id_personal: 3, fecha: '2024-07-18', presente: true, chequeo_material: true, id_jefe_encargado: 1 },
+    { id: 1, id_personal: 'Juan Pérez', fecha: '2024-07-16', presente: true, chequeo_material: true, notas: '', id_jefe_encargado: 1 },
+    { id: 2, id_personal: 'María López', fecha: '2024-07-17', presente: false, chequeo_material: false, notas: '', id_jefe_encargado: 2 },
+    { id: 3, id_personal: 'Carlos González', fecha: '2024-07-18', presente: true, chequeo_material: true, notas: '', id_jefe_encargado: 1 },
     // Agrega más asistencias según necesites
   ];
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
+
+  // Función para actualizar una asistencia
+  actualizarAsistencia(asistencia: any): void {
+    console.log('Asistencia actualizada:', asistencia);
+    // Aquí puedes implementar la lógica para actualizar la asistencia en tu backend o en tu estado de la aplicación
   }
 
   // Función para editar una asistencia
@@ -36,5 +41,4 @@ export class ListaAsistenciaComponent implements OnInit {
     console.log('Agregar nueva asistencia');
     // Aquí puedes implementar la lógica para agregar una nueva asistencia
   }
-
 }
