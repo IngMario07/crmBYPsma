@@ -1,6 +1,7 @@
 // lista-personal.component.ts
 
 import { Component, OnInit } from '@angular/core';
+import { ConexionService } from '../../core/services/conexion.service';
 
 @Component({
   selector: 'app-lista-personal',
@@ -16,9 +17,12 @@ export class ListaPersonalComponent implements OnInit {
     // Agrega más personas según necesites
   ];
 
-  constructor() { }
+  constructor(private conexionService: ConexionService) { }
 
   ngOnInit(): void {
+    this.conexionService.Get('personal').subscribe(response => {
+      console.log(response);
+    });
   }
 
   // Función para convertir el código de rol a texto
